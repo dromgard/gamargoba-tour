@@ -1,0 +1,8 @@
+.our-team {
+  margin: auto;
+  max-width: 868px;
+  padding: 0px 202px 61px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

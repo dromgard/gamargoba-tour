@@ -1,0 +1,6 @@
+.team-card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  justify-content: center;
+}

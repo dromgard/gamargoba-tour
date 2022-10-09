@@ -1,0 +1,8 @@
+.about-us {
+  margin: auto;
+  padding: 0 10px 180px 100px;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: minmax(325px, 470px) minmax(325px, 570px);
+  gap: 30px;
+}

@@ -1,0 +1,6 @@
+.team-card__bio {
+  width: 224px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

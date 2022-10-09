@@ -1,0 +1,10 @@
+.about {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 166px 0 70px;
+  display: flex;
+  flex-direction: column;
+  background: no-repeat center center url(../../images/about-background.png)
+    #f3f3f3;
+  background-size: cover;
+}

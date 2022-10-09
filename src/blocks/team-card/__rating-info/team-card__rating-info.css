@@ -1,0 +1,5 @@
+.team-card__rating-info {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}

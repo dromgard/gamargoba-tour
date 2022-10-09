@@ -1,0 +1,11 @@
+.team-card__rating {
+  margin: 0 0 0 7px;
+  padding: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #f2f2f2;
+}

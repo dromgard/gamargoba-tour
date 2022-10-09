@@ -1,0 +1,10 @@
+.about-us__video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: no-repeat center center url("../../../images/about-us-video.png");
+  background-size: cover;
+  border-radius: 20px;
+  aspect-ratio: 1.38;
+}

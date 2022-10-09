@@ -24,7 +24,9 @@
 
 @import url("../src/blocks/navbar/__link/navbar__link.css");
 
-@import url("../src/blocks/button-submit/button-submit.css");
+@import url("../src/blocks/button/button.css");
+
+@import url("../src/blocks/button/__submit/button__submit.css");
 
 @import url("../src/blocks/scroll/scroll.css");
 
@@ -33,3 +35,47 @@
 @import url("../src/blocks/scroll/__button/_left-light/scroll__button_left-light.css");
 
 @import url("../src/blocks/scroll/__button/_right-light/scroll__button_right-light.css");
+
+@import url("../src/blocks/about/about.css");
+
+@import url("../src/blocks/about-us/about-us.css");
+
+@import url("../src/blocks/about-us/__desctiption/about-us__desctiption.css");
+
+@import url("../src/blocks/about-us/__title/about-us__title.css");
+
+@import url("../src/blocks/about-us/__subtitle/about-us__subtitle.css");
+
+@import url("../src/blocks/about-us/__video/about-us__video.css");
+
+@import url("../src/blocks/about-us/__image/about-us__image.css");
+
+@import url("../src/blocks/button/__play/button__play.css");
+
+@import url("../src/blocks/our-team/our-team.css");
+
+@import url("../src/blocks/our-team/__cards/our-team__cards.css");
+
+@import url("../src/blocks/team-card/team-card.css");
+
+@import url("../src/blocks/team-card/__bio/team-card__bio.css");
+
+@import url("../src/blocks/team-card/__photo/team-card__photo.css");
+
+@import url("../src/blocks/team-card/__info/team-card__info.css");
+
+@import url("../src/blocks/team-card/__description/team-card__description.css");
+
+@import url("../src/blocks/team-card/__rating-info/team-card__rating-info.css");
+
+@import url("../src/blocks/team-card/__star/team-card__star.css");
+
+@import url("../src/blocks/team-card/__rating/team-card__rating.css");
+
+@import url("../src/blocks/team-card/__about/team-card__about.css");
+
+@import url("../src/blocks/scroll/_common/scroll_common.css");
+
+@import url("../src/blocks/scroll/__button/_right-dark/scroll__button_right-dark.css");
+
+@import url("../src/blocks/scroll/__button/_left-dark/scroll__button_left-dark.css");
