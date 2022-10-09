@@ -1,0 +1,16 @@
+.button-submit {
+  margin: 0;
+  padding: 20px 24px;
+  width: 193px;
+  height: 62px;
+  background: #e7e178;
+  border-radius: 10px;
+  border: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #272f40;
+}

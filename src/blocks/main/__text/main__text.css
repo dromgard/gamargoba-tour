@@ -1,0 +1,10 @@
+.main__text {
+  margin: 0;
+  padding: 0px 0 21px 0;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  color: #f2f2f2;
+}

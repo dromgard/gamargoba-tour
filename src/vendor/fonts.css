@@ -1,0 +1,44 @@
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../vendor/fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../vendor/fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../vendor/fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../vendor/fonts/Montserrat-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../vendor/fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../vendor/fonts/Montserrat-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../vendor/fonts/notoserif.woff2") format("woff2"),
+    url("../vendor/fonts/notoserif.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../vendor/fonts/notoserifbold.woff2") format("woff2"),
+    url("../vendor/fonts/notoserifbold.woff") format("woff");
+}

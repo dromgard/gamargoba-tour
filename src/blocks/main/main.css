@@ -1,0 +1,6 @@
+.main {
+  margin: 0 auto;
+  padding: 36px 30px 50px;
+  background: no-repeat center url(../../images/main-background-1.png) #c4c4c4;
+  background-size: cover;
+}

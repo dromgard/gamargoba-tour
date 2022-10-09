@@ -1,0 +1,6 @@
+.scroll {
+  margin: 0 62px 262px 0;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
