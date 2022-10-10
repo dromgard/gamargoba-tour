@@ -1,0 +1,14 @@
+.rules {
+  margin: 0 auto;
+  padding: 68px 0 73px 0;
+  display: grid;
+  grid-template-columns: minmax(323px, 600px) minmax(326px, 470px);
+  gap: 100px;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    no-repeat center center url(../../images/rules-background.png);
+  background-size: cover;
+}

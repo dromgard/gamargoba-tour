@@ -1,0 +1,7 @@
+.rules__desription {
+  margin: 0;
+  padding: 36px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

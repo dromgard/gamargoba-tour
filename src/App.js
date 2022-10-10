@@ -3,6 +3,7 @@ import Main from "./components/Main";
 import AboutUs from "./components/AboutUs";
 import OurTeam from "./components/OurTeam";
 import Tours from "./components/Tours";
+import Rules from "./components/Rules";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <OurTeam />
       </section>
       <Tours />
+      <Rules />
     </div>
   );
 }

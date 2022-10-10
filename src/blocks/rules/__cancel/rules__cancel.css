@@ -1,0 +1,9 @@
+.rules__cancel {
+  margin: 0;
+  padding: 36px 37px 56px 37px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: #4a5d67;
+  border-radius: 30px;
+}

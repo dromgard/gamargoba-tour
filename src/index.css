@@ -113,3 +113,19 @@
 @import url("../src/blocks/tours-card/__link/tours-card__link.css");
 
 @import url("../src/blocks/tours-card/__link/_invisible/tours-card__link_invisible.css");
+
+@import url("../src/blocks/rules/rules.css");
+
+@import url("../src/blocks/rules/__desription/rules__desription.css");
+
+@import url("../src/blocks/rules/__title/rules__title.css");
+
+@import url("../src/blocks/rules/__subtitle/rules__subtitle.css");
+
+@import url("../src/blocks/button/__submit/_rules/button__submit_rules.css");
+
+@import url("../src/blocks/rules/__cancel/rules__cancel.css");
+
+@import url("../src/blocks/rules/__title/_light/rules__title_light.css");
+
+@import url("../src/blocks/rules/__subtitle/_light/rules__subtitle_light.css");
