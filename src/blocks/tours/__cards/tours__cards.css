@@ -1,0 +1,5 @@
+.tours__cards {
+  margin: 120px 0 10px 0;
+  display: flex;
+  gap: 30px;
+}

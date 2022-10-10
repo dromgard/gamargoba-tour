@@ -74,8 +74,42 @@
 
 @import url("../src/blocks/team-card/__about/team-card__about.css");
 
-@import url("../src/blocks/scroll/_common/scroll_common.css");
+@import url("../src/blocks/scroll/_team/scroll_team.css");
 
 @import url("../src/blocks/scroll/__button/_right-dark/scroll__button_right-dark.css");
 
 @import url("../src/blocks/scroll/__button/_left-dark/scroll__button_left-dark.css");
+
+@import url("../src/blocks/tours/tours.css");
+
+@import url("../src/blocks/tours/__title/tours__title.css");
+
+@import url("../src/blocks/tours/__include/tours__include.css");
+
+@import url("../src/blocks/tours/__include-item/tours__include-item.css");
+
+@import url("../src/blocks/tours/__subtitle/tours__subtitle.css");
+
+@import url("../src/blocks/tours/__text/tours__text.css");
+
+@import url("../src/blocks/scroll/_tours/scroll_tours.css");
+
+@import url("../src/blocks/symbols/symbols.css");
+
+@import url("../src/blocks/tours/__cards/tours__cards.css");
+
+@import url("../src/blocks/tours-card/tours-card.css");
+
+@import url("../src/blocks/tours-card/__front-side/tours-card__front-side.css");
+
+@import url("../src/blocks/tours-card/__image/tours-card__image.css");
+
+@import url("../src/blocks/tours-card/__title-container/tours-card__title-container.css");
+
+@import url("../src/blocks/tours-card/__title/tours-card__title.css");
+
+@import url("../src/blocks/tours-card/__subtitle/tours-card__subtitle.css");
+
+@import url("../src/blocks/tours-card/__link/tours-card__link.css");
+
+@import url("../src/blocks/tours-card/__link/_invisible/tours-card__link_invisible.css");

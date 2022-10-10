@@ -1,0 +1,8 @@
+.symbols {
+  width: 100%;
+  height: 289px;
+  display: flex;
+  background: repeat center center url(../../images/symbols.svg);
+  justify-content: center;
+  align-items: flex-end;
+}

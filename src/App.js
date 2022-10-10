@@ -2,6 +2,7 @@ import React from "react";
 import Main from "./components/Main";
 import AboutUs from "./components/AboutUs";
 import OurTeam from "./components/OurTeam";
+import Tours from "./components/Tours";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <AboutUs />
         <OurTeam />
       </section>
+      <Tours />
     </div>
   );
 }
