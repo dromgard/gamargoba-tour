@@ -4,6 +4,7 @@ import AboutUs from "./components/AboutUs";
 import OurTeam from "./components/OurTeam";
 import Tours from "./components/Tours";
 import Rules from "./components/Rules";
+import Favourites from "./components/Favourites";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       </section>
       <Tours />
       <Rules />
+      <Favourites />
     </div>
   );
 }

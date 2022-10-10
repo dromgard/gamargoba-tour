@@ -12,7 +12,7 @@ function Main() {
           </p>
           <h1 className="main__title">Грузия</h1>
         </div>
-        <div className="scroll">
+        <div className="scroll scroll_main">
           <button className="scroll__button scroll__button_left-light" />
           <button className="scroll__button scroll__button_right-light" />
         </div>

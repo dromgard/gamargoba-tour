@@ -30,6 +30,8 @@
 
 @import url("../src/blocks/scroll/scroll.css");
 
+@import url("../src/blocks/scroll/_main/scroll_main.css");
+
 @import url("../src/blocks/scroll/__button/scroll__button.css");
 
 @import url("../src/blocks/scroll/__button/_left-light/scroll__button_left-light.css");
@@ -74,8 +76,6 @@
 
 @import url("../src/blocks/team-card/__about/team-card__about.css");
 
-@import url("../src/blocks/scroll/_team/scroll_team.css");
-
 @import url("../src/blocks/scroll/__button/_right-dark/scroll__button_right-dark.css");
 
 @import url("../src/blocks/scroll/__button/_left-dark/scroll__button_left-dark.css");
@@ -91,8 +91,6 @@
 @import url("../src/blocks/tours/__subtitle/tours__subtitle.css");
 
 @import url("../src/blocks/tours/__text/tours__text.css");
-
-@import url("../src/blocks/scroll/_tours/scroll_tours.css");
 
 @import url("../src/blocks/symbols/symbols.css");
 
@@ -129,3 +127,41 @@
 @import url("../src/blocks/rules/__title/_light/rules__title_light.css");
 
 @import url("../src/blocks/rules/__subtitle/_light/rules__subtitle_light.css");
+
+@import url("../src/blocks/favourites/favourites.css");
+
+@import url("../src/blocks/favourites/__title/favourites__title.css");
+
+@import url("../src/blocks/favourites/__map/favourites__map.css");
+
+@import url("../src/blocks/favourites/__city/favourites__city.css");
+
+@import url("../src/blocks/favourites/__city/_one/favourites__city_one.css");
+
+@import url("../src/blocks/favourites/__city/_two/favourites__city_two.css");
+
+@import url("../src/blocks/favourites/__city/_three/favourites__city_three.css");
+
+@import url("../src/blocks/favourites/__city/_four/favourites__city_four.css");
+
+@import url("../src/blocks/favourites/__city/_five/favourites__city_five.css");
+
+@import url("../src/blocks/reviews/reviews.css");
+
+@import url("../src/blocks/reviews/__title/reviews__title.css");
+
+@import url("../src/blocks/reviews/__cards/reviews__cards.css");
+
+@import url("../src/blocks/reviews-card/reviews-card.css");
+
+@import url("../src/blocks/reviews-card/__bio/reviews-card__bio.css");
+
+@import url("../src/blocks/reviews-card/__photo/reviews-card__photo.css");
+
+@import url("../src/blocks/reviews-card/__info/reviews-card__info.css");
+
+@import url("../src/blocks/reviews-card/__name/reviews-card__name.css");
+
+@import url("../src/blocks/reviews-card/__data/reviews-card__data.css");
+
+@import url("../src/blocks/reviews-card/__text/reviews-card__text.css");

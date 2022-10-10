@@ -1,0 +1,10 @@
+.favourites__map {
+  margin: 0 auto;
+  max-width: 768px;
+  height: 575px;
+  display: flex;
+  justify-content: center;
+  background: no-repeat center center url(../../../images/map.png);
+  background-size: 768px 575px;
+  position: relative;
+}

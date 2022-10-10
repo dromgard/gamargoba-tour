@@ -8,7 +8,7 @@ function Tours() {
       <div className="tours__cards">
         <ToursCards />
       </div>
-      <div className="scroll scroll_tours">
+      <div className="scroll">
         <button className="scroll__button scroll__button_left-light" />
         <button className="scroll__button scroll__button_right-light" />
       </div>

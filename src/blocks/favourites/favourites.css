@@ -1,0 +1,7 @@
+.favourites {
+  margin: 0 auto;
+  padding: 96px 0 56px 0;
+  background: linear-gradient(rgba(49, 66, 73, 0.8), rgba(49, 66, 73, 0.8)),
+    no-repeat center url(../../images/tours-favourites-background.png);
+  background-size: cover;
+}
