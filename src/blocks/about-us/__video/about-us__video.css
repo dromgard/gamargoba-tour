@@ -8,3 +8,10 @@
   border-radius: 20px;
   aspect-ratio: 1.38;
 }
+
+@media screen and (max-width: 810px) {
+  .about-us__video {
+    border-radius: 10px;
+    aspect-ratio: 1.65;
+  }
+}

@@ -1,10 +1,33 @@
 .about-us__title {
   margin: 0 0 6px 0;
   padding: 0;
+  max-width: 757px;
   font-family: "Noto Serif";
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
   line-height: 100px;
   color: #272f40;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-us__title {
+    font-size: 76px;
+    line-height: 80px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .about-us__title {
+    font-size: 56px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-us__title {
+    margin: 0;
+    font-size: 40px;
+    line-height: 44px;
+  }
 }

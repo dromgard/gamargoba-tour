@@ -4,11 +4,14 @@
   width: 46px;
   height: 45px;
   border: 0;
+  background: no-repeat center center;
+  background-size: 46px 45px;
 }
 
 @media screen and (max-width: 791px) {
   .scroll__button {
-    width: 27px;
+    width: 26px;
     height: 27px;
+    background-size: 26px 27px;
   }
 }

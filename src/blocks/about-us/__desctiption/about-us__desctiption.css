@@ -5,3 +5,15 @@
   flex-direction: column;
   gap: 22px;
 }
+
+@media screen and (max-width: 910px) {
+  .about-us__desctiption {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-us__desctiption {
+    gap: 10px;
+  }
+}
