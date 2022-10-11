@@ -1,0 +1,11 @@
+.order-form {
+  margin: 0 auto;
+  padding: 75px 0 75px 0;
+  max-width: 763px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  background: #4a5d67;
+  border-radius: 10px;
+}

@@ -1,0 +1,6 @@
+.order-form__form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(213px, 270px));
+  justify-content: center;
+  gap: 28px;
+}

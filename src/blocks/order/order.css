@@ -1,0 +1,6 @@
+.order {
+  margin: 0 auto;
+  padding: 145px 0 155px 0;
+  background: no-repeat center center url(../../images/order-background.png);
+  background-size: cover;
+}

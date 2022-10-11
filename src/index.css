@@ -165,3 +165,15 @@
 @import url("../src/blocks/reviews-card/__data/reviews-card__data.css");
 
 @import url("../src/blocks/reviews-card/__text/reviews-card__text.css");
+
+@import url("../src/blocks/order/order.css");
+
+@import url("../src/blocks/order-form/order-form.css");
+
+@import url("../src/blocks/order-form/__title/order-form__title.css");
+
+@import url("../src/blocks/order-form/__form/order-form__form.css");
+
+@import url("../src/blocks/order-form/__input/order-form__input.css");
+
+@import url("../src/blocks/button/__submit/_order/button__submit_order.css");

@@ -5,6 +5,7 @@ import OurTeam from "./components/OurTeam";
 import Tours from "./components/Tours";
 import Rules from "./components/Rules";
 import Favourites from "./components/Favourites";
+import OrderForm from "./components/OrderForm";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
       <Tours />
       <Rules />
       <Favourites />
+      <section className="order">
+        <OrderForm />
+      </section>
     </div>
   );
 }
