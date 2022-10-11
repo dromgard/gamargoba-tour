@@ -8,3 +8,9 @@
   background-size: cover;
   border-radius: 30px;
 }
+
+@media screen and (max-width: 790px) {
+  .main__block {
+    border-radius: 20px;
+  }
+}

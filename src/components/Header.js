@@ -7,7 +7,10 @@ function Header() {
     <header className="header">
       <img className="logo" src={logo} alt="Гамарджопа Тур"></img>
       <NavBar />
-      <button className="button button__submit">Позвонить нам</button>
+      <button className="button button__submit button__submit_invisible_header">
+        Позвонить нам
+      </button>
+      <button className="button button__burger" />
     </header>
   );
 }

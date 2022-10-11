@@ -1,18 +1,41 @@
 import React from "react";
 
 function OrderForm() {
+  // Переменные полей ввода.
+  const [name, setName] = React.useState("");
+  const [tour, setTour] = React.useState("");
+  const [phone, setPhone] = React.useState("");
+  const [date, setDate] = React.useState("");
+
+  // Обработчики полей ввода.
+  function handleChangeName(e) {
+    setName(e.target.value);
+  }
+
+  function handleChangeTour(e) {
+    setTour(e.target.value);
+  }
+
+  function handleChangePhone(e) {
+    setPhone(e.target.value);
+  }
+
+  function handleChangeDate(e) {
+    setDate(e.target.value);
+  }
+
   return (
     <div className="order-form">
       <h2 className="order-form__title">Записаться на тур</h2>
       <form className="order-form__form">
         <input
-          id="text"
+          id="name"
           type="text"
           placeholder="Ваше имя"
-          name="text"
+          name="name"
           className="order-form__input"
-          value=""
-          onChange=""
+          value={name}
+          onChange={handleChangeName}
           required
         />
         <input
@@ -21,18 +44,18 @@ function OrderForm() {
           placeholder="Выбрать тур"
           name="tour"
           className="order-form__input"
-          value=""
-          onChange=""
+          value={tour}
+          onChange={handleChangeTour}
           required
         />
         <input
-          id="tel"
+          id="phone"
           type="tel"
           placeholder="+7(___)___ __ __"
-          name="tel"
+          name="phone"
           className="order-form__input"
-          value=""
-          onChange=""
+          value={phone}
+          onChange={handleChangePhone}
           required
         />
         <input
@@ -41,8 +64,8 @@ function OrderForm() {
           placeholder="Выбрать дату"
           name="date"
           className="order-form__input"
-          value=""
-          onChange=""
+          value={date}
+          onChange={handleChangeDate}
           required
         />
         <button

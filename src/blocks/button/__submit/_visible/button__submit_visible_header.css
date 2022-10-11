@@ -1,0 +1,16 @@
+@media screen and (min-width: 791px) {
+  .button__submit_visible_header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .button__submit_visible_header {
+    display: block;
+    width: 114px;
+    height: 46px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
+  }
+}

@@ -51,7 +51,9 @@ function ToursCards() {
             alt="Новогодняя сказка: горы и вино"
           />
           <div className="tours-card__title-container">
-            <p className="tours-card__title">Новогодняя сказка: горы и вино</p>
+            <p className="tours-card__title">
+              Новогодняя сказка: горы&nbsp;и&nbsp;вино
+            </p>
           </div>
         </div>
         <p className="tours-card__subtitle">Для любителей выпить в горах</p>

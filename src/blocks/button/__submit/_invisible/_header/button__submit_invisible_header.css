@@ -1,9 +1,5 @@
-.navbar {
-  margin: 0 15px;
-}
-
 @media screen and (max-width: 790px) {
-  .navbar {
+  .button__submit_invisible_header {
     display: none;
   }
 }

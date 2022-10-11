@@ -14,6 +14,8 @@
 
 @import url("../src/blocks/main/__text/main__text.css");
 
+@import url("../src/blocks/main/__text/_visible/main__text_visible.css");
+
 @import url("../src/blocks/header/header.css");
 
 @import url("../src/blocks/logo/logo.css");
@@ -27,6 +29,12 @@
 @import url("../src/blocks/button/button.css");
 
 @import url("../src/blocks/button/__submit/button__submit.css");
+
+@import url("../src/blocks/button/__submit/_invisible/_header/button__submit_invisible_header.css");
+
+@import url("../src/blocks/button/__submit/_visible/button__submit_visible_header.css");
+
+@import url("../src/blocks/button/__burger/button__burger.css");
 
 @import url("../src/blocks/scroll/scroll.css");
 
@@ -177,3 +185,7 @@
 @import url("../src/blocks/order-form/__input/order-form__input.css");
 
 @import url("../src/blocks/button/__submit/_order/button__submit_order.css");
+
+@import url("../src/blocks/footer/footer.css");
+
+@import url("../src/blocks/navbar/__link/_light/navbar__link_light.css");

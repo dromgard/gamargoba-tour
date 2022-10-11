@@ -1,0 +1,9 @@
+.footer {
+  margin: 0 auto;
+  padding: 54px 0px 54px 81px;
+  display: flex;
+  gap: 177px;
+  justify-content: center;
+  align-items: center;
+  background: #4a5d67;
+}

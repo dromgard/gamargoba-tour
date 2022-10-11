@@ -6,6 +6,7 @@ import Tours from "./components/Tours";
 import Rules from "./components/Rules";
 import Favourites from "./components/Favourites";
 import OrderForm from "./components/OrderForm";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <section className="order">
         <OrderForm />
       </section>
+      <Footer />
     </div>
   );
 }

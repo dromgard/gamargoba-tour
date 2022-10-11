@@ -5,3 +5,9 @@
     no-repeat center url(../../images/main-background-1.png) #c4c4c4;
   background-size: cover;
 }
+
+@media screen and (max-width: 790px) {
+  .main {
+    padding: 18px 24px 15px 24px;
+  }
+}

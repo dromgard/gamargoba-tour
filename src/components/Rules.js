@@ -4,7 +4,7 @@ function Rules() {
   return (
     <section className="rules">
       <div className="rules__desription">
-        <h2 className="rules__title">Правила въезда в страну</h2>
+        <h2 className="rules__title">Правила въезда в&nbsp;страну</h2>
         <p className="rules__subtitle">
           С 1 марта 2021 года граждане Российской Федерации могут свободно
           посещать Грузию без карантина при наличии отрицательного ПЦР-теста.

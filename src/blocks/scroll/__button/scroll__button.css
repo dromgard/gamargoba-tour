@@ -5,3 +5,10 @@
   height: 45px;
   border: 0;
 }
+
+@media screen and (max-width: 791px) {
+  .scroll__button {
+    width: 27px;
+    height: 27px;
+  }
+}
