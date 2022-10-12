@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gamargoba-tour/static/css/main.0a2c53b0.css",
-    "main.js": "/gamargoba-tour/static/js/main.f3ceced6.js",
+    "main.js": "/gamargoba-tour/static/js/main.e42201d3.js",
     "static/js/787.cec53561.chunk.js": "/gamargoba-tour/static/js/787.cec53561.chunk.js",
     "static/media/about-background.png": "/gamargoba-tour/static/media/about-background.a65afbfd6668f5fc5844.png",
     "static/media/order-background.png": "/gamargoba-tour/static/media/order-background.5f9c2c4b232a09e3febf.png",
@@ -44,11 +44,11 @@
     "static/media/button-play.svg": "/gamargoba-tour/static/media/button-play.6897fc8e5b7aedb7ff8f.svg",
     "static/media/star.svg": "/gamargoba-tour/static/media/star.f412d9e90c20db139366bbe83c5d75bf.svg",
     "main.0a2c53b0.css.map": "/gamargoba-tour/static/css/main.0a2c53b0.css.map",
-    "main.f3ceced6.js.map": "/gamargoba-tour/static/js/main.f3ceced6.js.map",
+    "main.e42201d3.js.map": "/gamargoba-tour/static/js/main.e42201d3.js.map",
     "787.cec53561.chunk.js.map": "/gamargoba-tour/static/js/787.cec53561.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0a2c53b0.css",
-    "static/js/main.f3ceced6.js"
+    "static/js/main.e42201d3.js"
   ]
 }
