@@ -1,11 +1,23 @@
 .favourites__map {
   margin: 0 auto;
-  padding: 41px 0px 0 0;
-  max-width: 768px;
+  padding: 41px 26px 0 24px;
+  max-width: 1440px;
   height: 575px;
   display: flex;
   justify-content: center;
   background: no-repeat center center url(../../../images/map.png);
   background-size: 768px 575px;
   position: relative;
+}
+
+@media screen and (max-width: 1230px) {
+  .favourites__map {
+    padding: 0 26px 0 24px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .favourites__map {
+    display: none;
+  }
 }

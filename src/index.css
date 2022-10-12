@@ -38,6 +38,8 @@
 
 @import url("../src/blocks/scroll/scroll.css");
 
+@import url("../src/blocks/scroll/_invisible/scroll_invisible.css");
+
 @import url("../src/blocks/scroll/_main/scroll_main.css");
 
 @import url("../src/blocks/scroll/__button/scroll__button.css");
@@ -186,6 +188,14 @@
 
 @import url("../src/blocks/button/__submit/_order/button__submit_order.css");
 
+@import url("../src/blocks/button/__submit/_visible/_order/button__submit_visible_order.css");
+
 @import url("../src/blocks/footer/footer.css");
 
+@import url("../src/blocks/button/__submit/_invisible/_footer/button__submit_invisible_footer.css");
+
+@import url("../src/blocks/logo/_invisible/logo_invisible.css");
+
 @import url("../src/blocks/navbar/__link/_light/navbar__link_light.css");
+
+@import url("../src/blocks/logo-partner/logo-partner.css");

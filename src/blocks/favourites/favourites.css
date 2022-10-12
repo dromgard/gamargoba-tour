@@ -5,3 +5,15 @@
     no-repeat center url(../../images/tours-favourites-background.png);
   background-size: cover;
 }
+
+@media screen and (max-width: 1230px) {
+  .favourites {
+    padding: 60px 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .favourites {
+    padding: 30px 0 13px 0;
+  }
+}

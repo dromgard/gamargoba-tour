@@ -1,6 +1,24 @@
 .tours__cards {
-  margin: 120px 0 10px 0;
+  margin: 120px 0 10px 135px;
   display: flex;
   gap: 30px;
   overflow: hidden;
+}
+
+@media screen and (max-width: 1230px) {
+  .tours__cards {
+    margin: 90px 0 10px 30px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .tours__cards {
+    margin: 60px 0 10px 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tours__cards {
+    margin: 30px 0 10px 24px;
+  }
 }

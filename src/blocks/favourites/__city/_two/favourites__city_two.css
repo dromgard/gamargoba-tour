@@ -1,5 +1,11 @@
 .favourites__city_two {
   position: absolute;
-  top: 237px;
-  right: -46px;
+  top: 210px;
+  right: 290px;
+}
+
+@media screen and (max-width: 1110px) {
+  .favourites__city_two {
+    right: 120px;
+  }
 }

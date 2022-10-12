@@ -8,3 +8,24 @@
   line-height: 20px;
   color: #272f40;
 }
+
+@media screen and (max-width: 1040px) {
+  .rules__subtitle {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .rules__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .rules__subtitle {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

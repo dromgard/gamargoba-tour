@@ -4,3 +4,21 @@
   background: no-repeat top left url(../../images/order-background.png);
   background-size: cover;
 }
+
+@media screen and (max-width: 910px) {
+  .order {
+    padding: 100px 26px 110px 24px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .order {
+    padding: 100px 26px 207px 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .order {
+    padding: 49px 26px 159px 24px;
+  }
+}

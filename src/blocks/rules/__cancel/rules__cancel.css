@@ -9,3 +9,27 @@
   border-radius: 30px;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 1040px) {
+  .rules__cancel {
+    height: 300px;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .rules__cancel {
+    padding: 28px 33px 46px 33px;
+    height: 280px;
+    gap: 30px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .rules__cancel {
+    height: 164px;
+    gap: 20px;
+    border-radius: 10px;
+  }
+}

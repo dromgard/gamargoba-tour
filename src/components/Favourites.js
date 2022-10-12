@@ -15,7 +15,7 @@ function Favourites() {
         </div>
         <section className="reviews">
           <div className="symbols">
-            <h2 className="reviews__title">Отзывы</h2>
+            <h2 className="favourites__title">Отзывы</h2>
           </div>
           <div className="reviews__cards">
             <ReviewsCards />

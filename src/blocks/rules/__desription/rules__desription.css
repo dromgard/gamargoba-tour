@@ -5,3 +5,16 @@
   flex-direction: column;
   gap: 30px;
 }
+
+@media screen and (max-width: 1040px) {
+  .rules__desription {
+    padding: 0;
+    gap: 23px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rules__desription {
+    order: 1;
+  }
+}

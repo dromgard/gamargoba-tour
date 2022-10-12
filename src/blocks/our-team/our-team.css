@@ -1,15 +1,9 @@
 .our-team {
-  padding: 0px 202px 67px calc(100% - 1205px);
+  padding: 0px 0 67px calc(100% - 1205px);
   max-width: 1440px;
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
-
-@media screen and (max-width: 1230px) {
-  .our-team {
-    padding: 0px 30px 55px 30px;
-  }
 }
 
 @media screen and (max-width: 1230px) {

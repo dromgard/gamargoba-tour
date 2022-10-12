@@ -45,6 +45,10 @@ function Tours() {
           </p>
         </div>
       </div>
+      <div className="scroll scroll_invisible">
+        <button className="scroll__button scroll__button_left-light" />
+        <button className="scroll__button scroll__button_right-light" />
+      </div>
     </section>
   );
 }

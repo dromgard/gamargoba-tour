@@ -9,3 +9,16 @@
   background: #4a5d67;
   border-radius: 10px;
 }
+
+@media screen and (max-width: 790px) {
+  .order-form {
+    padding: 28px 47px;
+    gap: 45px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .order-form {
+    gap: 30px;
+  }
+}

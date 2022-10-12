@@ -7,3 +7,22 @@
   border-radius: 20px;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 1230px) {
+  .tours__include-item {
+    height: 175px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .tours__include-item {
+    height: 163px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tours__include-item {
+    padding: 20px 40px;
+    height: 149px;
+  }
+}

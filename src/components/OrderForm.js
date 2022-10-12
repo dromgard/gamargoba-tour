@@ -76,6 +76,14 @@ function OrderForm() {
         >
           Записаться
         </button>
+        <button
+          className="button button__submit button__submit_order button__submit_visible_order"
+          name="submit"
+          type="submit"
+          aria-label="Записаться на тур"
+        >
+          Записаться на тур
+        </button>
       </form>
     </div>
   );

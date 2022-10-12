@@ -3,6 +3,13 @@
   height: 289px;
   display: flex;
   background: repeat center center url(../../images/symbols.svg);
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-end;
+  background-size: cover;
+}
+
+@media screen and (max-width: 790px) {
+  .symbols {
+    height: 146px;
+  }
 }

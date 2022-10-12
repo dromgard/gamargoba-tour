@@ -2,3 +2,9 @@
   position: absolute;
   top: 654px;
 }
+
+@media screen and (max-width: 1110px) {
+  .favourites__city_five {
+    top: 580px;
+  }
+}

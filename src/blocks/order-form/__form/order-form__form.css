@@ -4,3 +4,18 @@
   justify-content: center;
   gap: 28px;
 }
+
+@media screen and (max-width: 790px) {
+  .order-form__form {
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .order-form__form {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

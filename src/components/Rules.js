@@ -19,7 +19,7 @@ function Rules() {
       </div>
       <div className="rules__cancel">
         <h2 className="rules__title rules__title_light">
-          Бесплатная отмена тура!
+          Бесплатная отмена&nbsp;тура!
         </h2>
         <p className="rules__subtitle rules__subtitle_light">
           Возвращаем 100% при отмене не позднее чем за 7 дней
