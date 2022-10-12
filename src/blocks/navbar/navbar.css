@@ -1,9 +1,0 @@
-.navbar {
-  margin: 0 15px;
-}
-
-@media screen and (max-width: 790px) {
-  .navbar {
-    display: none;
-  }
-}
