@@ -6,6 +6,12 @@
   border: 0;
   background: no-repeat center center;
   background-size: 46px 45px;
+  transition: 0.3s;
+}
+
+.scroll__button:hover {
+  cursor: pointer;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 791px) {
