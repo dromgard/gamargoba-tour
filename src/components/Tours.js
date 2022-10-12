@@ -3,7 +3,7 @@ import ToursCards from "./ToursCards";
 
 function Tours() {
   return (
-    <section className="tours">
+    <section id="tours" className="tours">
       <h2 className="tours__title">Туры по Грузии</h2>
       <div className="tours__cards">
         <ToursCards />

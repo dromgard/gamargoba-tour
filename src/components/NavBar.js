@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 function NavBar({ lightTheme }) {
   return (
@@ -7,7 +7,7 @@ function NavBar({ lightTheme }) {
       <ul className="navbar__nav">
         <li>
           <Link
-            to="/"
+            to="#tours"
             className={`navbar__link ${lightTheme ? "navbar__link_light" : ""}`}
           >
             Туры
@@ -15,7 +15,7 @@ function NavBar({ lightTheme }) {
         </li>
         <li>
           <Link
-            to="/"
+            to="#favoutires"
             className={`navbar__link ${lightTheme ? "navbar__link_light" : ""}`}
           >
             Походы
@@ -23,7 +23,7 @@ function NavBar({ lightTheme }) {
         </li>
         <li>
           <Link
-            to="/"
+            to="#reviews"
             className={`navbar__link ${lightTheme ? "navbar__link_light" : ""}`}
           >
             Отзывы
@@ -31,7 +31,7 @@ function NavBar({ lightTheme }) {
         </li>
         <li>
           <Link
-            to="/"
+            to="#order"
             className={`navbar__link ${lightTheme ? "navbar__link_light" : ""}`}
           >
             Контакты

@@ -4,7 +4,7 @@ import ReviewsCards from "./ReviewsCards";
 function Favourites() {
   return (
     <>
-      <section className="favourites">
+      <section id="favoutires" className="favourites">
         <h2 className="favourites__title">Наши любимые места</h2>
         <div className="favourites__map">
           <p className="favourites__city favourites__city_one">Тбилиси</p>
@@ -15,7 +15,9 @@ function Favourites() {
         </div>
         <section className="reviews">
           <div className="symbols">
-            <h2 className="favourites__title">Отзывы</h2>
+            <h2 id="reviews" className="favourites__title">
+              Отзывы
+            </h2>
           </div>
           <div className="reviews__cards">
             <ReviewsCards />

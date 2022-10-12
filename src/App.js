@@ -19,7 +19,7 @@ function App() {
       <Tours />
       <Rules />
       <Favourites />
-      <section className="order">
+      <section id="order" className="order">
         <OrderForm />
       </section>
       <Footer />
