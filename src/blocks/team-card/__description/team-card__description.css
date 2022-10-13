@@ -1,6 +1,26 @@
 .team-card__description {
+  max-width: 489px;
+  min-width: 185px;
   display: flex;
   flex-direction: column;
   gap: 23px;
   justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .team-card__description {
+    gap: 18px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .team-card__description {
+    gap: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .team-card__description {
+    gap: 10px;
+  }
 }

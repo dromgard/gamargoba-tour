@@ -8,4 +8,10 @@
   font-size: 18px;
   line-height: 20px;
   color: #272f40;
+  transition: 0.3s;
+}
+
+.navbar__link:hover {
+  cursor: pointer;
+  opacity: 0.6;
 }

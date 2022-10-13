@@ -16,10 +16,6 @@ function OurTeam() {
       <div className="our-team__cards">
         <OurTeamCards />
       </div>
-      <div className="scroll">
-        <button className="scroll__button scroll__button_left-dark" />
-        <button className="scroll__button scroll__button_right-dark" />
-      </div>
     </>
   );
 }

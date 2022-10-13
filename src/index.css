@@ -70,11 +70,11 @@
 
 @import url("../src/blocks/team-card/team-card.css");
 
+@import url("../src/blocks/scroll/_cards/scroll_cards.css");
+
 @import url("../src/blocks/team-card/__bio/team-card__bio.css");
 
 @import url("../src/blocks/team-card/__photo/team-card__photo.css");
-
-@import url("../src/blocks/team-card/__info/team-card__info.css");
 
 @import url("../src/blocks/team-card/__description/team-card__description.css");
 
@@ -82,9 +82,7 @@
 
 @import url("../src/blocks/team-card/__star/team-card__star.css");
 
-@import url("../src/blocks/team-card/__rating/team-card__rating.css");
-
-@import url("../src/blocks/team-card/__about/team-card__about.css");
+@import url("../src/blocks/team-card/__text/team-card__text.css");
 
 @import url("../src/blocks/scroll/__button/_right-dark/scroll__button_right-dark.css");
 
@@ -199,3 +197,5 @@
 @import url("../src/blocks/navbar/__link/_light/navbar__link_light.css");
 
 @import url("../src/blocks/logo-partner/logo-partner.css");
+
+@import url("../src/blocks/swiper/swiper.css");

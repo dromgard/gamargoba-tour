@@ -1,0 +1,9 @@
+.scroll_cards {
+  margin: 0 197px 0 0;
+}
+
+@media screen and (max-width: 791px) {
+  .scroll_cards {
+    margin: 0 0 0 91px;
+  }
+}
