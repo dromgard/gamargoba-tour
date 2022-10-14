@@ -1,0 +1,5 @@
+@media screen and (min-width: 741px) {
+  .favourites__cards {
+    display: none;
+  }
+}

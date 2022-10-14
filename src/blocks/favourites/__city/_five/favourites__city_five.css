@@ -1,10 +1,10 @@
 .favourites__city_five {
   position: absolute;
-  top: 654px;
+  top: 600px;
 }
 
 @media screen and (max-width: 1110px) {
   .favourites__city_five {
-    top: 580px;
+    top: 560px;
   }
 }

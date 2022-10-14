@@ -23,8 +23,6 @@
 
 @media screen and (max-width: 790px) {
   .tours__include {
-    margin: 30px 24px 0 26px;
-    grid-template-columns: minmax(327px, 500px);
-    grid-template-rows: auto;
+    display: none;
   }
 }

@@ -10,6 +10,12 @@
 
 @media screen and (max-width: 790px) {
   .symbols {
-    height: 150px;
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .symbols {
+    height: 120px;
   }
 }

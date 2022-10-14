@@ -92,6 +92,8 @@
 
 @import url("../src/blocks/tours/__include/tours__include.css");
 
+@import url("../src/blocks/tours/__include/_swiper/tours__include_swiper.css");
+
 @import url("../src/blocks/tours/__include-item/tours__include-item.css");
 
 @import url("../src/blocks/tours/__subtitle/tours__subtitle.css");
@@ -156,6 +158,14 @@
 
 @import url("../src/blocks/favourites/__city/_five/favourites__city_five.css");
 
+@import url("../src/blocks/favourites/__cards/favourites__cards.css");
+
+@import url("../src/blocks/favourites-card/favourites-card.css");
+
+@import url("../src/blocks/favourites-card/__title/favourites-card__title.css");
+
+@import url("../src/blocks/favourites-card/__photo/favourites-card__photo.css");
+
 @import url("../src/blocks/reviews/reviews.css");
 
 @import url("../src/blocks/reviews/__title/reviews__title.css");
@@ -171,8 +181,6 @@
 @import url("../src/blocks/reviews-card/__info/reviews-card__info.css");
 
 @import url("../src/blocks/reviews-card/__name/reviews-card__name.css");
-
-@import url("../src/blocks/reviews-card/__data/reviews-card__data.css");
 
 @import url("../src/blocks/reviews-card/__text/reviews-card__text.css");
 

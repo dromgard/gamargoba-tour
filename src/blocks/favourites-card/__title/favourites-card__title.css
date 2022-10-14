@@ -1,0 +1,12 @@
+.favourites-card__title {
+  position: absolute;
+  bottom: 31px;
+  left: 71px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: center;
+  color: #f2f2f2;
+}

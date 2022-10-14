@@ -1,12 +1,11 @@
 .favourites__city_three {
   position: absolute;
-  top: 527px;
+  top: 470px;
   left: 304px;
 }
 
 @media screen and (max-width: 1110px) {
   .favourites__city_three {
-    top: 490px;
     left: 140px;
   }
 }
