@@ -9,4 +9,12 @@
   text-align: center;
   color: #e7e178;
   text-decoration: none;
+  transition: 1s;
+}
+
+@media screen and (max-width: 790px) {
+  .tours-card__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }

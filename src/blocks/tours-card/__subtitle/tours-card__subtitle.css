@@ -12,3 +12,11 @@
   text-align: center;
   color: #f2f2f2;
 }
+
+@media screen and (max-width: 790px) {
+  .tours-card__subtitle {
+    bottom: 30px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

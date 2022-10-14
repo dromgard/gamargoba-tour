@@ -5,6 +5,13 @@
   border-radius: 20px;
 }
 
+@media screen and (max-width: 790px) {
+  .tours-card__image {
+    width: 240px;
+    height: 320px;
+  }
+}
+
 /*
 .tours-card__image::before {
   background: linear-gradient(

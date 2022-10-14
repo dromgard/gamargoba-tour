@@ -12,3 +12,10 @@
   background-blend-mode: color-burn;
   border-radius: 20px;
 }
+
+@media screen and (max-width: 790px) {
+  .tours-card__title-container {
+    top: 205px;
+    height: 115px;
+  }
+}

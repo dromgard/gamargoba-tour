@@ -8,10 +8,7 @@ function Tours() {
       <div className="tours__cards">
         <ToursCards />
       </div>
-      <div className="scroll">
-        <button className="scroll__button scroll__button_left-light" />
-        <button className="scroll__button scroll__button_right-light" />
-      </div>
+
       <div className="symbols">
         <h2 className="tours__title">Что включено?</h2>
       </div>

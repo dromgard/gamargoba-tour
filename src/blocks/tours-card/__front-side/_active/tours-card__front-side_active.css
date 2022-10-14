@@ -1,0 +1,10 @@
+.tours-card__front-side_active {
+  margin: -60px 0 74px 0;
+  transition: margin 0.5s;
+}
+
+@media screen and (max-width: 790px) {
+  .tours-card__front-side_active {
+    margin: -40px 0 50px 0;
+  }
+}
