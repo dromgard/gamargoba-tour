@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gamargoba-tour/static/css/main.3807e95d.css",
-    "main.js": "/gamargoba-tour/static/js/main.26488eea.js",
+    "main.css": "/gamargoba-tour/static/css/main.64e50707.css",
+    "main.js": "/gamargoba-tour/static/js/main.addfd78e.js",
     "static/js/787.cec53561.chunk.js": "/gamargoba-tour/static/js/787.cec53561.chunk.js",
     "static/media/about-background.png": "/gamargoba-tour/static/media/about-background.a65afbfd6668f5fc5844.png",
     "static/media/order-background.png": "/gamargoba-tour/static/media/order-background.5f9c2c4b232a09e3febf.png",
@@ -12,8 +12,6 @@
     "static/media/about-us-video.png": "/gamargoba-tour/static/media/about-us-video.dceaa7c0f74e15a485d1.png",
     "static/media/main-background-2.png": "/gamargoba-tour/static/media/main-background-2.7c23bbd4bafd2b21682f.png",
     "static/media/rules-background.png": "/gamargoba-tour/static/media/rules-background.eb116dc32396e1ba63cb.png",
-    "static/media/tour-card-1.png": "/gamargoba-tour/static/media/tour-card-1.9bbc0108a67bce464133.png",
-    "static/media/tour-card-4.png": "/gamargoba-tour/static/media/tour-card-4.9845bb6a9e02bed4d332.png",
     "static/media/dmitrii.png": "/gamargoba-tour/static/media/dmitrii.0244764da29567f71a75.png",
     "static/media/notoserifbold.woff": "/gamargoba-tour/static/media/notoserifbold.b1c9cdb88dcef1d4eec8.woff",
     "static/media/notoserif.woff": "/gamargoba-tour/static/media/notoserif.ad8ba898561f90489b09.woff",
@@ -43,12 +41,12 @@
     "static/media/burger-menu.svg": "/gamargoba-tour/static/media/burger-menu.e6ad78292fdbe709fa3f.svg",
     "static/media/button-play.svg": "/gamargoba-tour/static/media/button-play.6897fc8e5b7aedb7ff8f.svg",
     "static/media/star.svg": "/gamargoba-tour/static/media/star.f412d9e90c20db139366bbe83c5d75bf.svg",
-    "main.3807e95d.css.map": "/gamargoba-tour/static/css/main.3807e95d.css.map",
-    "main.26488eea.js.map": "/gamargoba-tour/static/js/main.26488eea.js.map",
+    "main.64e50707.css.map": "/gamargoba-tour/static/css/main.64e50707.css.map",
+    "main.addfd78e.js.map": "/gamargoba-tour/static/js/main.addfd78e.js.map",
     "787.cec53561.chunk.js.map": "/gamargoba-tour/static/js/787.cec53561.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3807e95d.css",
-    "static/js/main.26488eea.js"
+    "static/css/main.64e50707.css",
+    "static/js/main.addfd78e.js"
   ]
 }
