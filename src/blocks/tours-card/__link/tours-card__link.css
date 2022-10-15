@@ -9,7 +9,9 @@
   text-align: center;
   color: #e7e178;
   text-decoration: none;
-  transition: 1s;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.35s linear;
 }
 
 @media screen and (max-width: 790px) {

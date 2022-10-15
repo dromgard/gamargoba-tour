@@ -1,0 +1,9 @@
+.popup__container_burger-menu {
+  margin: 55px 70px 0 0;
+}
+
+@media screen and (max-width: 910px) {
+  .popup__container_burger-menu {
+    margin: 50px 35px 0 0;
+  }
+}

@@ -1,6 +1,6 @@
 .order-form__form {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(213px, 270px));
+  grid-template-columns: repeat(auto-fit, minmax(213px, 1fr));
   justify-content: center;
   gap: 28px;
 }
@@ -14,8 +14,6 @@
 @media screen and (max-width: 600px) {
   .order-form__form {
     padding: 0 10px;
-    display: flex;
-    flex-direction: column;
     gap: 20px;
   }
 }

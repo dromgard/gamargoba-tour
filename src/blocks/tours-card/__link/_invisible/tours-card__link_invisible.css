@@ -1,4 +1,4 @@
 .tours-card__link_invisible {
-  display: none;
-  transition: 1s;
+  visibility: hidden;
+  opacity: 0;
 }

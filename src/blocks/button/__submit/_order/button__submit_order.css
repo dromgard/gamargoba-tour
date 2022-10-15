@@ -6,8 +6,9 @@
   justify-self: center;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 600px) {
   .button__submit_order {
     display: none;
+    grid-column: unset;
   }
 }

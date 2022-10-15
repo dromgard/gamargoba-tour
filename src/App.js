@@ -7,11 +7,27 @@ import Rules from "./components/Rules";
 import Favourites from "./components/Favourites";
 import OrderForm from "./components/OrderForm";
 import Footer from "./components/Footer";
+import PopupWithOrder from "./components/PopupWithOrder";
+import PopupWithNav from "./components/PopupWithNav";
 
 function App() {
+  const [isPopupOrderOpen, setIsPopupOrderOpen] = React.useState(false);
+  const [isPopupNavOpen, setIsPopupNavOpen] = React.useState(false);
+
+  function closePopupOrder() {
+    setIsPopupOrderOpen(false);
+  }
+
+  function closeBurgerMenu() {
+    setIsPopupNavOpen(false);
+  }
+
   return (
     <div className="page">
-      <Main />
+      <Main
+        onMakeOrder={setIsPopupOrderOpen}
+        onBurgerMenu={setIsPopupNavOpen}
+      />
       <section className="about">
         <AboutUs />
         <OurTeam />
@@ -22,7 +38,9 @@ function App() {
       <section id="order" className="order">
         <OrderForm />
       </section>
-      <Footer />
+      <Footer onMakeOrder={setIsPopupOrderOpen} />
+      <PopupWithOrder isOpen={isPopupOrderOpen} onClose={closePopupOrder} />
+      <PopupWithNav isOpen={isPopupNavOpen} onClose={closeBurgerMenu} />
     </div>
   );
 }

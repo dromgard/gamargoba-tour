@@ -22,7 +22,11 @@
 
 @import url("../src/blocks/navbar/navbar.css");
 
+@import url("../src/blocks/navbar/_visible/navbar_visible.css");
+
 @import url("../src/blocks/navbar/__nav/navbar__nav.css");
+
+@import url("../src/blocks/navbar/__nav/_burger-menu/navbar__nav_burger-menu.css");
 
 @import url("../src/blocks/navbar/__link/navbar__link.css");
 
@@ -209,3 +213,15 @@
 @import url("../src/blocks/logo-partner/logo-partner.css");
 
 @import url("../src/blocks/swiper/swiper.css");
+
+@import url("../src/blocks/popup/popup.css");
+
+@import url("../src/blocks/popup/_opened/popup_opened.css");
+
+@import url("../src/blocks/popup/_burger-menu/popup_burger-menu.css");
+
+@import url("../src/blocks/popup/__container/popup__container.css");
+
+@import url("../src/blocks/popup/__container/_burger-menu/popup__container_burger-menu.css");
+
+@import url("../src/blocks/popup/__close/popup__close.css");

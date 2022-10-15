@@ -1,14 +1,17 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
-function NavBar({ lightTheme }) {
+function NavBar({ lightTheme, burgerMenu, onClose }) {
   return (
-    <div className="navbar">
-      <ul className="navbar__nav">
+    <div className={`navbar ${burgerMenu ? "navbar navbar_visible" : ""}`}>
+      <ul
+        className={`navbar__nav ${burgerMenu ? "navbar__nav_burger-menu" : ""}`}
+      >
         <li>
           <Link
             to="#tours"
             className={`navbar__link ${lightTheme ? "navbar__link_light" : ""}`}
+            onClick={onClose}
           >
             Туры
           </Link>
@@ -17,6 +20,7 @@ function NavBar({ lightTheme }) {
           <Link
             to="#favoutires"
             className={`navbar__link ${lightTheme ? "navbar__link_light" : ""}`}
+            onClick={onClose}
           >
             Походы
           </Link>
@@ -25,6 +29,7 @@ function NavBar({ lightTheme }) {
           <Link
             to="#reviews"
             className={`navbar__link ${lightTheme ? "navbar__link_light" : ""}`}
+            onClick={onClose}
           >
             Отзывы
           </Link>
@@ -33,6 +38,7 @@ function NavBar({ lightTheme }) {
           <Link
             to="#order"
             className={`navbar__link ${lightTheme ? "navbar__link_light" : ""}`}
+            onClick={onClose}
           >
             Контакты
           </Link>

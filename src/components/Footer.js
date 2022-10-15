@@ -6,7 +6,7 @@ import logoPartner2 from "../images/logo-partner-2.svg";
 import logoPartner3 from "../images/logo-partner-3.svg";
 import logoPartner4 from "../images/logo-partner-4.svg";
 
-function Footer() {
+function Footer({ onMakeOrder }) {
   const lightTheme = true;
 
   return (
@@ -17,7 +17,11 @@ function Footer() {
         alt="Гамарджопа Тур"
       ></img>
       <NavBar lightTheme={lightTheme} />
-      <button className="button button__submit button__submit_invisible_footer">
+      <button
+        className="button button__submit button__submit_invisible_footer"
+        type="button"
+        onClick={onMakeOrder}
+      >
         Позвонить нам
       </button>
       <img className="logo-partner" src={logoPartner1} alt="партнер 1"></img>

@@ -1,0 +1,5 @@
+.navbar__nav_burger-menu {
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px 15px;
+}
