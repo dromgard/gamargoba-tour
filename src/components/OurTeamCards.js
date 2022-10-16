@@ -1,13 +1,11 @@
 import React from "react";
-import star from "../images/star.svg";
-import dmitrii from "../images/dmitrii.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
-function OurTeamCards() {
+function OurTeamCards({ stuff }) {
   const swiperNavPrev = React.useRef(null);
   const swiperNavNext = React.useRef(null);
 
@@ -45,78 +43,37 @@ function OurTeamCards() {
           swiper.navigation.update();
         }}
       >
-        <SwiperSlide>
-          <div className="team-card">
-            <div className="team-card__bio">
-              <img
-                className="team-card__photo"
-                src={dmitrii}
-                alt="Дмитрий Грузия, Батуми"
-              />
-              <p className="team-card__text">Дмитрий Грузия, Батуми</p>
-            </div>
-            <div className="team-card__description">
-              <div className="team-card__rating-info">
-                <img className="team-card__star" src={star} alt="Рейтинг" />
-                <p className="team-card__text">5.0</p>
+        {stuff.map((card) => (
+          <SwiperSlide key={card.id}>
+            <div className="team-card">
+              <div className="team-card__bio">
+                <img
+                  className="team-card__photo"
+                  src={card.photo}
+                  alt={card.name}
+                />
+                <p className="team-card__text">{card.name}</p>
+                <p className="team-card__text">{card.placeFrom}</p>
               </div>
-              <p className="team-card__text">
-                Каждый из нас понимает очевидную вещь: высокотехнологичная
-                концепция социального заказа обеспечивает актуальность вывода
-                оборотных средств.
-              </p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="team-card">
-            <div className="team-card__bio">
-              <img
-                className="team-card__photo"
-                src={dmitrii}
-                alt="Дмитрий Грузия, Батуми"
-              />
-              <p className="team-card__text">Дмитрий Грузия, Батуми</p>
-            </div>
-            <div className="team-card__description">
-              <div className="team-card__rating-info">
-                <img className="team-card__star" src={star} alt="Рейтинг" />
-                <img className="team-card__star" src={star} alt="Рейтинг" />
-                <p className="team-card__text">5.0</p>
+              <div className="team-card__description">
+                <div className="team-card__rating-info">
+                  {card.rating.map((item, i) => (
+                    <img
+                      key={i}
+                      className="team-card__star"
+                      src={card.star}
+                      alt="Рейтинг"
+                    />
+                  ))}
+                  <p className="team-card__text">{`${
+                    card.rating[card.rating.length - 1]
+                  }.0`}</p>
+                </div>
+                <p className="team-card__text">{card.text}</p>
               </div>
-              <p className="team-card__text">
-                Каждый из нас понимает очевидную вещь: высокотехнологичная
-                концепция социального заказа обеспечивает актуальность вывода
-                оборотных средств.
-              </p>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="team-card">
-            <div className="team-card__bio">
-              <img
-                className="team-card__photo"
-                src={dmitrii}
-                alt="Дмитрий Грузия, Батуми"
-              />
-              <p className="team-card__text">Дмитрий Грузия, Батуми</p>
-            </div>
-            <div className="team-card__description">
-              <div className="team-card__rating-info">
-                <img className="team-card__star" src={star} alt="Рейтинг" />
-                <img className="team-card__star" src={star} alt="Рейтинг" />
-                <img className="team-card__star" src={star} alt="Рейтинг" />
-                <p className="team-card__text">5.0</p>
-              </div>
-              <p className="team-card__text">
-                Каждый из нас понимает очевидную вещь: высокотехнологичная
-                концепция социального заказа обеспечивает актуальность вывода
-                оборотных средств.
-              </p>
-            </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
       </Swiper>
       <div className="scroll scroll_cards">
         <button

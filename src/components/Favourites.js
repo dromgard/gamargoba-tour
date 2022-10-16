@@ -4,10 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import favouritesplace1 from "../images/favourites-place-1.png";
-import favouritesplace2 from "../images/favourites-place-2.png";
 
-function Favourites() {
+function Favourites({ favouritePlaces, reviews }) {
   const swiperNavPrev = React.useRef(null);
   const swiperNavNext = React.useRef(null);
 
@@ -59,46 +57,18 @@ function Favourites() {
               swiper.navigation.update();
             }}
           >
-            <SwiperSlide>
-              <div className="favourites-card">
-                <img
-                  className="favourites-card__photo"
-                  src={favouritesplace1}
-                  alt="Тбилиси"
-                />
-                <p className="favourites-card__title">Тбилиси</p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="favourites-card">
-                <img
-                  className="favourites-card__photo"
-                  src={favouritesplace2}
-                  alt="Мцхета"
-                />
-                <p className="favourites-card__title">Мцхета</p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="favourites-card">
-                <img
-                  className="favourites-card__photo"
-                  src={favouritesplace1}
-                  alt="Тбилиси"
-                />
-                <p className="favourites-card__title">Тбилиси</p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="favourites-card">
-                <img
-                  className="favourites-card__photo"
-                  src={favouritesplace2}
-                  alt="Мцхета"
-                />
-                <p className="favourites-card__title">Мцхета</p>
-              </div>
-            </SwiperSlide>
+            {favouritePlaces.map((card) => (
+              <SwiperSlide key={card.id}>
+                <div className="favourites-card">
+                  <img
+                    className="favourites-card__photo"
+                    src={card.photo}
+                    alt={card.title}
+                  />
+                  <p className="favourites-card__title">{card.title}</p>
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
           <div className="scroll scroll_cards">
             <button
@@ -118,7 +88,7 @@ function Favourites() {
             </h2>
           </div>
           <div className="reviews__cards">
-            <ReviewsCards />
+            <ReviewsCards reviews={reviews} />
           </div>
         </section>
       </section>

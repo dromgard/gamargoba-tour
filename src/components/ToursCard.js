@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import card2 from "../images/tour-card-3.png";
 
-function ToursCard() {
+function ToursCard({ card }) {
   const [isCardActive, setIsCardActive] = React.useState(false);
 
   function handleCardClick() {
@@ -17,13 +16,9 @@ function ToursCard() {
         }`}
         onClick={handleCardClick}
       >
-        <img
-          src={card2}
-          className="tours-card__image"
-          alt="Горнолыжный курорт"
-        />
+        <img src={card.photo} className="tours-card__image" alt={card.title} />
         <div className="tours-card__title-container">
-          <p className="tours-card__title">Горнолыжный курорт</p>
+          <p className="tours-card__title">{card.title}</p>
         </div>
       </div>
       <p
@@ -31,10 +26,10 @@ function ToursCard() {
           isCardActive ? "tours-card__subtitle_active" : ""
         }`}
       >
-        Для любителей обычного катания на лыжах...
+        {card.subtitle}
       </p>
       <Link
-        to="/"
+        to={card.link}
         className={`tours-card__link ${
           isCardActive ? "" : "tours-card__link_invisible"
         }`}

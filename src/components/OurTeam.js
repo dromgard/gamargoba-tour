@@ -1,7 +1,7 @@
 import React from "react";
 import OurTeamCards from "./OurTeamCards";
 
-function OurTeam() {
+function OurTeam({ stuff }) {
   return (
     <>
       <div className="our-team">
@@ -14,7 +14,7 @@ function OurTeam() {
         </p>
       </div>
       <div className="our-team__cards">
-        <OurTeamCards />
+        <OurTeamCards stuff={stuff} />
       </div>
     </>
   );

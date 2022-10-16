@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
-function ToursCards() {
+function ToursCards({ toursCards }) {
   const swiperNavPrev = React.useRef(null);
   const swiperNavNext = React.useRef(null);
 
@@ -52,30 +52,11 @@ function ToursCards() {
           swiper.navigation.update();
         }}
       >
-        <SwiperSlide>
-          <ToursCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ToursCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ToursCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ToursCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ToursCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ToursCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ToursCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ToursCard />
-        </SwiperSlide>
+        {toursCards.map((cardItem) => (
+          <SwiperSlide key={cardItem.id}>
+            <ToursCard card={cardItem} />
+          </SwiperSlide>
+        ))}
       </Swiper>
 
       <div className="scroll scroll_cards">

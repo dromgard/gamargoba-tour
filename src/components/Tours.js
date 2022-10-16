@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
-function Tours() {
+function Tours({ toursCards, toursIncludes }) {
   const swiperNavPrev = React.useRef(null);
   const swiperNavNext = React.useRef(null);
 
@@ -14,41 +14,19 @@ function Tours() {
     <section id="tours" className="tours">
       <h2 className="tours__title">Туры по Грузии</h2>
       <div className="tours__cards">
-        <ToursCards />
+        <ToursCards toursCards={toursCards} />
       </div>
 
       <div className="symbols">
         <h2 className="tours__title">Что включено?</h2>
       </div>
       <div className="tours__include">
-        <div className="tours__include-item">
-          <h3 className="tours__subtitle">Проживание</h3>
-          <p className="tours__text">
-            Готовы предоставить жилье — как в роскошном отеле холдинга Adjara
-            Group, так и с подселением в аутентичную грузинскую семью.
-          </p>
-        </div>
-        <div className="tours__include-item">
-          <h3 className="tours__subtitle">Еда</h3>
-          <p className="tours__text">
-            Знакомство со страной невозможно без традиционной грузинской кухни.
-            В каждый тур включена дегустация национальных блюд.
-          </p>
-        </div>
-        <div className="tours__include-item">
-          <h3 className="tours__subtitle">Трансфер</h3>
-          <p className="tours__text">
-            Поможем организовать трансфер от и до аэропорта и подготовим
-            комфортное перемещение между городами регионов.
-          </p>
-        </div>
-        <div className="tours__include-item">
-          <h3 className="tours__subtitle">Новые знакоиства</h3>
-          <p className="tours__text">
-            Туры в группе — объединение единомышленников, из которого когда-то
-            вырос и наш проект.
-          </p>
-        </div>
+        {toursIncludes.map((card) => (
+          <div key={card.id} className="tours__include-item">
+            <h3 className="tours__subtitle">{card.title}</h3>
+            <p className="tours__text">{card.subtitle}</p>
+          </div>
+        ))}
       </div>
       <div className="tours__include_swiper">
         <Swiper
@@ -83,43 +61,14 @@ function Tours() {
             swiper.navigation.update();
           }}
         >
-          <SwiperSlide>
-            <div className="tours__include-item">
-              <h3 className="tours__subtitle">Проживание</h3>
-              <p className="tours__text">
-                Готовы предоставить жилье — как в роскошном отеле холдинга
-                Adjara Group, так и с подселением в аутентичную грузинскую
-                семью.
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="tours__include-item">
-              <h3 className="tours__subtitle">Еда</h3>
-              <p className="tours__text">
-                Знакомство со страной невозможно без традиционной грузинской
-                кухни. В каждый тур включена дегустация национальных блюд.
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="tours__include-item">
-              <h3 className="tours__subtitle">Трансфер</h3>
-              <p className="tours__text">
-                Поможем организовать трансфер от и до аэропорта и подготовим
-                комфортное перемещение между городами регионов.
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="tours__include-item">
-              <h3 className="tours__subtitle">Новые знакоиства</h3>
-              <p className="tours__text">
-                Туры в группе — объединение единомышленников, из которого
-                когда-то вырос и наш проект.
-              </p>
-            </div>
-          </SwiperSlide>
+          {toursIncludes.map((card) => (
+            <SwiperSlide key={card.id}>
+              <div className="tours__include-item">
+                <h3 className="tours__subtitle">{card.title}</h3>
+                <p className="tours__text">{card.subtitle}</p>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
         <div className="scroll scroll_cards">
           <button

@@ -9,6 +9,13 @@ import OrderForm from "./components/OrderForm";
 import Footer from "./components/Footer";
 import PopupWithOrder from "./components/PopupWithOrder";
 import PopupWithNav from "./components/PopupWithNav";
+import {
+  stuff,
+  toursCards,
+  toursIncludes,
+  favouritePlaces,
+  reviews,
+} from "./components/utils/constants.js";
 
 function App() {
   const [isPopupOrderOpen, setIsPopupOrderOpen] = React.useState(false);
@@ -30,11 +37,11 @@ function App() {
       />
       <section className="about">
         <AboutUs />
-        <OurTeam />
+        <OurTeam stuff={stuff} />
       </section>
-      <Tours />
+      <Tours toursCards={toursCards} toursIncludes={toursIncludes} />
       <Rules />
-      <Favourites />
+      <Favourites favouritePlaces={favouritePlaces} reviews={reviews} />
       <section id="order" className="order">
         <OrderForm />
       </section>
