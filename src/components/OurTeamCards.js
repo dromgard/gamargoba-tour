@@ -1,21 +1,29 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import SwiperCore, { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
+
+SwiperCore.use([Navigation]);
 
 function OurTeamCards({ stuff }) {
   const swiperNavPrev = React.useRef(null);
   const swiperNavNext = React.useRef(null);
 
+  // Получаем рэйтинг числом и создаем массив для отрисовки
+  // количества звездочек согласно рэйтингу.
+  function makeArrayFromRating(rating) {
+    return [...Array(rating).keys()];
+  }
+
   return (
     <>
       <Swiper
-        modules={[Navigation]}
+        //modules={[Navigation]}
         navigation={{
-          prevEl: swiperNavPrev.current,
-          nextEl: swiperNavNext.current,
+          prevEl: swiperNavPrev.current ? swiperNavPrev.current : undefined,
+          nextEl: swiperNavNext.current ? swiperNavNext.current : undefined,
         }}
         effect
         speed={800}
@@ -57,7 +65,7 @@ function OurTeamCards({ stuff }) {
               </div>
               <div className="team-card__description">
                 <div className="team-card__rating-info">
-                  {card.rating.map((item, i) => (
+                  {makeArrayFromRating(card.rating).map((item, i) => (
                     <img
                       key={i}
                       className="team-card__star"
@@ -65,9 +73,7 @@ function OurTeamCards({ stuff }) {
                       alt="Рейтинг"
                     />
                   ))}
-                  <p className="team-card__text">{`${
-                    card.rating[card.rating.length - 1]
-                  }.0`}</p>
+                  <p className="team-card__text">{`${card.rating}.0`}</p>
                 </div>
                 <p className="team-card__text">{card.text}</p>
               </div>
