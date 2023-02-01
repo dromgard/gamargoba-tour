@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,14 +11,16 @@ function OurTeamCards({ stuff }) {
     return [...Array(rating).keys()];
   }
 
-  const slider = React.useRef(null);
+  let slider = useRef(null);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 800,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    initialSlide: 0,
+    arrows: false,
   };
 
   return (
@@ -58,12 +60,12 @@ function OurTeamCards({ stuff }) {
 
       <div className="scroll scroll_cards">
         <button
-          onClick={() => slider?.current?.slickPrev()}
           className="scroll__button scroll__button_left-dark"
+          onClick={() => slider.current.slickPrev()}
         />
         <button
-          onClick={() => slider?.current?.slickNext()}
           className="scroll__button scroll__button_right-dark"
+          onClick={() => slider.current.slickNext()}
         />
       </div>
     </>

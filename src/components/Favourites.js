@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useRef } from "react";
 import ReviewsCards from "./ReviewsCards";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Favourites({ favouritePlaces, reviews }) {
-  const swiperNavPrev = React.useRef(null);
-  const swiperNavNext = React.useRef(null);
+  let slider = useRef(null);
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 2
+        },
+      }
+    ]
+  };
 
   return (
     <>
@@ -21,44 +37,11 @@ function Favourites({ favouritePlaces, reviews }) {
           <p className="favourites__city favourites__city_five">Боржоми</p>
         </div>
         <div className="favourites__cards">
-          <Swiper
-            modules={[Navigation]}
-            navigation={{
-              prevEl: swiperNavPrev.current,
-              nextEl: swiperNavNext.current,
-            }}
-            effect
-            speed={800}
-            spaceBetween={0}
-            slidesPerView={2}
-            breakpoints={{
-              // when window width is >= 375px
-              375: {
-                slidesPerView: 2,
-              },
-              // when window width is >= 425px
-              425: {
-                slidesPerView: 2.25,
-              },
-              // when window width is >= 500px
-              500: {
-                slidesPerView: 2.75,
-              },
-              // when window width is >= 600px
-              600: {
-                slidesPerView: 3.4,
-              },
-            }}
-            loop
-            onInit={(swiper) => {
-              swiper.params.navigation.prevEl = swiperNavPrev.current;
-              swiper.params.navigation.nextEl = swiperNavNext.current;
-              swiper.navigation.init();
-              swiper.navigation.update();
-            }}
-          >
+
+          <Slider ref={slider} {...settings}>
             {favouritePlaces.map((card) => (
-              <SwiperSlide key={card.id}>
+              <div className="slider-card" key={card.id}>
+
                 <div className="favourites-card">
                   <img
                     className="favourites-card__photo"
@@ -67,16 +50,19 @@ function Favourites({ favouritePlaces, reviews }) {
                   />
                   <p className="favourites-card__title">{card.title}</p>
                 </div>
-              </SwiperSlide>
+
+              </div>
             ))}
-          </Swiper>
+          </Slider>
+
+
           <div className="scroll scroll_cards">
             <button
-              ref={swiperNavPrev}
+              onClick={() => slider.current.slickPrev()}
               className="scroll__button scroll__button_left-light"
             />
             <button
-              ref={swiperNavNext}
+              onClick={() => slider.current.slickNext()}
               className="scroll__button scroll__button_right-light"
             />
           </div>

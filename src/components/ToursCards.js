@@ -1,72 +1,61 @@
-import React from "react";
+import React, { useRef } from "react";
 import ToursCard from "./ToursCard";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/effect-fade";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function ToursCards({ toursCards }) {
-  const swiperNavPrev = React.useRef(null);
-  const swiperNavNext = React.useRef(null);
+  let slider = useRef(null);
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 4.5,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1310,
+        settings: {
+          slidesToShow: 3.5
+        },
+      },
+      {
+        breakpoint: 1026,
+        settings: {
+          slidesToShow: 2.5
+        },
+      },
+      {
+        breakpoint: 666,
+        settings: {
+          slidesToShow: 1.5
+        },
+      }
+    ]
+  };
 
   return (
     <>
-      <Swiper
-        modules={[Navigation]}
-        navigation={{
-          prevEl: swiperNavPrev.current,
-          nextEl: swiperNavNext.current,
-        }}
-        effect
-        speed={800}
-        spaceBetween={20}
-        slidesPerView={1.5}
-        breakpoints={{
-          // when window width is >= 375px
-          375: {
-            slidesPerView: 1.5,
-          },
-          // when window width is >= 560px
-          560: {
-            slidesPerView: 2.25,
-          },
-          // when window width is >= 700px
-          700: {
-            slidesPerView: 2.75,
-          },
-          // when window width is >= 1000px
-          1000: {
-            slidesPerView: 3.5,
-          },
-          // when window width is >= 1311px
-          1311: {
-            slidesPerView: 4.5,
-          },
-        }}
-        //loop
-        onInit={(swiper) => {
-          swiper.params.navigation.prevEl = swiperNavPrev.current;
-          swiper.params.navigation.nextEl = swiperNavNext.current;
-          swiper.navigation.init();
-          swiper.navigation.update();
-        }}
-      >
+
+      <Slider ref={slider} {...settings}>
         {toursCards.map((cardItem) => (
-          <SwiperSlide key={cardItem.id}>
+          <div className="slider-card" key={cardItem.id}>
             <ToursCard card={cardItem} />
-          </SwiperSlide>
+          </div>
         ))}
-      </Swiper>
+      </Slider>
 
       <div className="scroll scroll_cards">
         <button
-          ref={swiperNavPrev}
           className="scroll__button scroll__button_left-light"
+          onClick={() => slider.current.slickPrev()}
         />
         <button
-          ref={swiperNavNext}
           className="scroll__button scroll__button_right-light"
+          onClick={() => slider.current.slickNext()}
         />
       </div>
     </>
