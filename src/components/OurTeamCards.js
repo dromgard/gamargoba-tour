@@ -1,15 +1,9 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/effect-fade";
-
-SwiperCore.use([Navigation]);
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function OurTeamCards({ stuff }) {
-  const swiperNavPrev = React.useRef(null);
-  const swiperNavNext = React.useRef(null);
 
   // Получаем рэйтинг числом и создаем массив для отрисовки
   // количества звездочек согласно рэйтингу.
@@ -17,42 +11,21 @@ function OurTeamCards({ stuff }) {
     return [...Array(rating).keys()];
   }
 
+  const slider = React.useRef(null);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
   return (
     <>
-      <Swiper
-        //modules={[Navigation]}
-        navigation={{
-          prevEl: swiperNavPrev.current ? swiperNavPrev.current : undefined,
-          nextEl: swiperNavNext.current ? swiperNavNext.current : undefined,
-        }}
-        effect
-        speed={800}
-        spaceBetween={0}
-        slidesPerView={1}
-        breakpoints={{
-          // when window width is >= 375px
-          375: {
-            slidesPerView: 1,
-          },
-          // when window width is >= 550px
-          550: {
-            slidesPerView: 1.25,
-          },
-          // when window width is >= 910px
-          910: {
-            slidesPerView: 1.5,
-          },
-        }}
-        loop
-        onInit={(swiper) => {
-          swiper.params.navigation.prevEl = swiperNavPrev.current;
-          swiper.params.navigation.nextEl = swiperNavNext.current;
-          swiper.navigation.init();
-          swiper.navigation.update();
-        }}
-      >
+      <Slider ref={slider} {...settings}>
         {stuff.map((card) => (
-          <SwiperSlide key={card.id}>
+          <div className="slider-card" key={card.id}>
             <div className="team-card">
               <div className="team-card__bio">
                 <img
@@ -78,16 +51,18 @@ function OurTeamCards({ stuff }) {
                 <p className="team-card__text">{card.text}</p>
               </div>
             </div>
-          </SwiperSlide>
+          </div>
+
         ))}
-      </Swiper>
+      </Slider>
+
       <div className="scroll scroll_cards">
         <button
-          ref={swiperNavPrev}
+          onClick={() => slider?.current?.slickPrev()}
           className="scroll__button scroll__button_left-dark"
         />
         <button
-          ref={swiperNavNext}
+          onClick={() => slider?.current?.slickNext()}
           className="scroll__button scroll__button_right-dark"
         />
       </div>
