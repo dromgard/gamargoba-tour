@@ -18,7 +18,7 @@
 
 ### Публикация в интернете:
 
-[Сайт - https://dromgard.github.io/gamargoba-tour/](https://dromgard.github.io/gamargoba-tour/)
+[Сайт - https://gamargoba-tour.vercel.app/](https://gamargoba-tour.vercel.app/)
 
 ### Запуск проекта:
 
