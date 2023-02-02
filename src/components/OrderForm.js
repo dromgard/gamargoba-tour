@@ -13,9 +13,11 @@ function OrderForm({ onSubmit }) {
 
   // Обработчики полей ввода.
   function handleChangeName(e) {
-    setName(e.target.value);
+    const inputValue = e.target.value;
 
-    if (name.length === 0) {
+    setName(inputValue);
+
+    if (inputValue.length === 0) {
       setInputNameError("Нужно заполнить");
       return;
     }
@@ -28,16 +30,16 @@ function OrderForm({ onSubmit }) {
   }
 
   function handleChangePhone(e) {
-    const phone = e.target.value;
+    const inputValue = e.target.value;
 
-    if (phoneRegex.test(phone)) {
+    if (phoneRegex.test(inputValue)) {
       setInputPhoneError("Только цифры");
       return;
     }
 
-    setPhone(phone);
+    setPhone(inputValue);
 
-    if (phone.length === 0) {
+    if (inputValue.length === 0) {
       setInputPhoneError("Нужно заполнить");
       return;
     }
