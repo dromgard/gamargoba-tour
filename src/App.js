@@ -41,7 +41,7 @@ function App() {
 
   }
 
-  function handleSubmitForm(name, phone) {
+  function handleSubmitForm({ name, phone }) {
     setOrderData({ name, phone });
     setIsPopupWithInfo(true);
   }

@@ -1,83 +1,110 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function OrderForm({ onSubmit }) {
   // Переменные полей ввода.
-  const [name, setName] = useState("");
-  const [tour, setTour] = useState("");
-  const [phone, setPhone] = useState("");
-  const [date, setDate] = useState("");
+  const [inputValues, setInputValues] = useState({
+    name: "",
+    tour: "",
+    phone: "",
+    date: "",
+  });
+  const [isNameValid, setIsNameValid] = useState(false);
+  const [isPhoneValid, setIsPhoneValid] = useState(false);
+  const [isFormValid, setIsFormValid] = useState(false);
   const [inputNameError, setInputNameError] = useState("*Обязательное поле");
   const [inputPhoneError, setInputPhoneError] = useState("*Обязательное поле");
 
   const phoneRegex = /[^0-9'".]/;
 
-  // Обработчики полей ввода.
+  // Обработчик поля Имя.
   function handleChangeName(e) {
-    const inputValue = e.target.value;
+    const { name, value } = e.target;
 
-    setName(inputValue);
+    setInputValues({
+      ...inputValues,
+      [name]: value
+    })
 
-    if (inputValue.length === 0) {
-      setInputNameError("Нужно заполнить");
+    if (value.length === 0) {
+      setInputNameError("*Обязательное поле");
+      setIsNameValid(false);
       return;
     }
 
     setInputNameError("");
+    setIsNameValid(true);
   }
 
+  // Обработчик поля Тур.
   function handleChangeTour(e) {
-    setTour(e.target.value);
+    const { name, value } = e.target;
+
+    setInputValues({
+      ...inputValues,
+      [name]: value
+    })
   }
 
+  // Обработчик поля Телефон.
   function handleChangePhone(e) {
-    const inputValue = e.target.value;
+    const { name, value } = e.target;
 
-    if (phoneRegex.test(inputValue)) {
+    if (phoneRegex.test(value)) {
       setInputPhoneError("Только цифры");
       return;
     }
 
-    setPhone(inputValue);
+    setInputValues({
+      ...inputValues,
+      [name]: value
+    })
 
-    if (inputValue.length === 0) {
-      setInputPhoneError("Нужно заполнить");
+    if (value.length === 0) {
+      setInputPhoneError("*Обязательное поле");
+      setIsPhoneValid(false);
       return;
     }
 
     setInputPhoneError("");
-
+    setIsPhoneValid(true);
   }
 
+  // Обработчик поля Дата.
   function handleChangeDate(e) {
-    setDate(e.target.value);
+    const { name, value } = e.target;
+
+    setInputValues({
+      ...inputValues,
+      [name]: value
+    })
   }
 
+  // Сброс формы.
   function resetForm() {
-    setName("");
-    setTour("");
-    setPhone("");
-    setDate("");
+    setInputValues({
+      name: "",
+      tour: "",
+      phone: "",
+      date: "",
+    })
     setInputNameError("*Обязательное поле");
     setInputPhoneError("*Обязательное поле");
+    setIsNameValid(false);
+    setIsPhoneValid(false);
+    setIsFormValid(false);
   }
 
   // Обработчики кнопки Submit.
   function handleSubmit(e) {
     e.preventDefault();
-
-    if (name.length === 0) {
-      setInputNameError("Нужно заполнить");
-      return;
-    }
-
-    if (phone.length === 0) {
-      setInputPhoneError("Нужно заполнить");
-      return;
-    }
-
-    onSubmit(name, phone);
-    resetForm();
+    onSubmit(inputValues);
+    resetForm()
   }
+
+  // Отслеживаем валидацию обязательных инпутов и разблокируем кнопку Submit.
+  useEffect(() => {
+    isNameValid && isPhoneValid ? setIsFormValid(true) : setIsFormValid(false)
+  }, [isNameValid, isPhoneValid])
 
   return (
     <div className="order-form">
@@ -90,7 +117,7 @@ function OrderForm({ onSubmit }) {
             placeholder="Ваше имя"
             name="name"
             className="order-form__input"
-            value={name}
+            value={inputValues.name}
             onChange={handleChangeName}
           />
           <span className="order-form__input-error">{inputNameError}</span>
@@ -102,7 +129,7 @@ function OrderForm({ onSubmit }) {
             placeholder="Выбрать тур"
             name="tour"
             className="order-form__input"
-            value={tour}
+            value={inputValues.tour}
             onChange={handleChangeTour}
           />
           <span className="order-form__input-error"></span>
@@ -114,7 +141,7 @@ function OrderForm({ onSubmit }) {
             placeholder="Ваш телефон"
             name="phone"
             className="order-form__input"
-            value={phone}
+            value={inputValues.phone}
             onChange={handleChangePhone}
           />
           <span className="order-form__input-error">{inputPhoneError}</span>
@@ -126,7 +153,7 @@ function OrderForm({ onSubmit }) {
             placeholder="Выбрать дату"
             name="date"
             className="order-form__input"
-            value={date}
+            value={inputValues.date}
             onChange={handleChangeDate}
           />
           <span className="order-form__input-error"></span>
@@ -136,14 +163,16 @@ function OrderForm({ onSubmit }) {
           name="submit"
           type="submit"
           aria-label="Записаться"
+          disabled={!isFormValid}
         >
           Записаться
         </button>
         <button
-          className="button button__submit button__submit_order button__submit_visible_order"
+          className="button button__submit button__submit_disable button__submit_order button__submit_visible_order"
           name="submit"
           type="submit"
           aria-label="Записаться на тур"
+          disabled={!isFormValid}
         >
           Записаться на тур
         </button>

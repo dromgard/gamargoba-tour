@@ -6,6 +6,11 @@
   justify-self: center;
 }
 
+.button__submit_order:disabled {
+  cursor: auto;
+  background: #adadad;
+}
+
 @media screen and (max-width: 600px) {
   .button__submit_order {
     display: none;
