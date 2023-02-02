@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 function OrderForm({ onSubmit }) {
-  // Переменные полей ввода.
+  // States.
   const [inputValues, setInputValues] = useState({
     name: "",
     tour: "",
