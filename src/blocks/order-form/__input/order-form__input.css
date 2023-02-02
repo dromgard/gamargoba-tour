@@ -14,6 +14,24 @@
   box-sizing: border-box;
 }
 
+.order-form__input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.order-form__input-error {
+  margin: 0;
+  padding: 0;
+  height: 12px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ffe700;
+}
+
 @media screen and (max-width: 600px) {
   .order-form__input {
     height: 38px;

@@ -1,5 +1,4 @@
 import React from "react";
-import videoImage from "../images/about-us-video.png";
 
 function AboutUs() {
   return (

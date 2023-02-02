@@ -2,18 +2,18 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(213px, 1fr));
   justify-content: center;
-  gap: 28px;
+  row-gap: 13px;
+  column-gap: 28px;
 }
 
 @media screen and (max-width: 790px) {
   .order-form__form {
-    gap: 24px;
+    row-gap: 10px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .order-form__form {
     padding: 0 10px;
-    gap: 20px;
   }
 }

@@ -9,6 +9,7 @@ import OrderForm from "./components/OrderForm";
 import Footer from "./components/Footer";
 import PopupWithOrder from "./components/PopupWithOrder";
 import PopupWithNav from "./components/PopupWithNav";
+import PopupWithInfo from "./components/PopupWithInfo";
 import {
   stuff,
   toursCards,
@@ -20,6 +21,8 @@ import {
 function App() {
   const [isPopupOrderOpen, setIsPopupOrderOpen] = React.useState(false);
   const [isPopupNavOpen, setIsPopupNavOpen] = React.useState(false);
+  const [isPopupWithInfo, setIsPopupWithInfo] = React.useState(false);
+  const [orderData, setOrderData] = React.useState({ name: "", phone: "" });
 
   function closePopupOrder() {
     setIsPopupOrderOpen(false);
@@ -27,6 +30,20 @@ function App() {
 
   function closeBurgerMenu() {
     setIsPopupNavOpen(false);
+  }
+
+  function closePopupWithInfo() {
+    setIsPopupWithInfo(false);
+    closePopupOrder();
+    setTimeout(() => {
+      setOrderData({ name: "", phone: "" });
+    }, 300)
+
+  }
+
+  function handleSubmitForm(name, phone) {
+    setOrderData({ name, phone });
+    setIsPopupWithInfo(true);
   }
 
   return (
@@ -43,11 +60,12 @@ function App() {
       <Rules />
       <Favourites favouritePlaces={favouritePlaces} reviews={reviews} />
       <section id="order" className="order">
-        <OrderForm />
+        <OrderForm onSubmit={handleSubmitForm} />
       </section>
       <Footer onMakeOrder={setIsPopupOrderOpen} />
-      <PopupWithOrder isOpen={isPopupOrderOpen} onClose={closePopupOrder} />
+      <PopupWithOrder isOpen={isPopupOrderOpen} onClose={closePopupOrder} onSubmit={handleSubmitForm} />
       <PopupWithNav isOpen={isPopupNavOpen} onClose={closeBurgerMenu} />
+      <PopupWithInfo isOpen={isPopupWithInfo} onClose={closePopupWithInfo} orderData={orderData} />
     </div>
   );
 }
