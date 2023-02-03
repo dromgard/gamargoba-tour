@@ -10,23 +10,17 @@ function ReviewsCards({ reviews }) {
     dots: false,
     infinite: true,
     speed: 800,
-    slidesToShow: 3,
+    slidesToShow: 2.5,
     slidesToScroll: 1,
-    initialSlide: 0,
+    initialSlide: -0.5,
     arrows: false,
     responsive: [
       {
-        breakpoint: 1070,
+        breakpoint: 760,
         settings: {
-          slidesToShow: 2
-        },
-      },
-      {
-        breakpoint: 620,
-        settings: {
-          slidesToShow: 1
-        },
-      },
+          slidesToShow: 1.5
+        }
+      }
     ]
   };
 

@@ -17,10 +17,20 @@ function OurTeamCards({ stuff }) {
     dots: false,
     infinite: true,
     speed: 800,
-    slidesToShow: 1,
+    slidesToShow: 1.5,
     slidesToScroll: 1,
-    initialSlide: 0,
+    initialSlide: 1.5,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 0,
+        }
+      }
+    ]
   };
 
   return (

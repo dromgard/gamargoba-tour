@@ -4,7 +4,7 @@
   max-height: 364px;
   height: fit-content;
   display: flex;
-  margin: 61px 0 53px 135px;
+  margin: 61px 0 53px 10%;
   padding: 40px 41px 40px 41px;
   gap: 30px;
   background: #4a5d67;
@@ -16,7 +16,7 @@
 @media screen and (max-width: 1280px) {
   .team-card {
     gap: 23px;
-    margin: 50px 0 44px 80px;
+    margin: 50px 0 44px 10%;
     padding: 35px 34px 35px 34px;
   }
 }
@@ -24,7 +24,7 @@
 @media screen and (max-width: 910px) {
   .team-card {
     gap: 16px;
-    margin: 38px 24px 36px 50px;
+    margin: 38px 0 36px 10%;
     padding: 30px 25px 30px 25px;
     border-radius: 10px;
   }
@@ -33,7 +33,7 @@
 @media screen and (max-width: 600px) {
   .team-card {
     gap: 13px;
-    margin: 30px 24px 30px 24px;
+    margin: 30px 24px 30px;
     padding: 24px 14px 24px 14px;
   }
 }

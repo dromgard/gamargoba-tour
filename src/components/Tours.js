@@ -13,20 +13,15 @@ function Tours({ toursCards, toursIncludes }) {
     speed: 800,
     slidesToShow: 1.5,
     slidesToScroll: 1,
-    initialSlide: 0,
+    initialSlide: -0.5,
     arrows: false,
     responsive: [
       {
-        breakpoint: 560,
+        breakpoint: 500,
         settings: {
-          slidesToShow: 1
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1.5
-        },
+          initialSlide: 0,
+          slidesToShow: 1,
+        }
       }
     ]
   };
