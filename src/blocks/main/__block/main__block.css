@@ -7,6 +7,7 @@
     #9d9d9d;
   background-size: cover;
   border-radius: 30px;
+  transition: background 0.5s ease;
 }
 
 @media screen and (max-width: 790px) {

@@ -29,4 +29,8 @@
     line-height: 52px;
     color: #272f40;
   }
+
+  .main__title_light-theme {
+    color: #f2f2f2;
+  }
 }

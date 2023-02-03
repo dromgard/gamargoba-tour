@@ -1,10 +1,9 @@
 .main {
   margin: 0 auto;
   padding: 36px 30px 50px;
+  background: no-repeat center url("../../images/main-background-1.png") #9d9d9d;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #c4c4c4;
+  transition: background 0.5s ease;
 }
 
 @media screen and (max-width: 790px) {
