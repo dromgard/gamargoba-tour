@@ -1,4 +1,5 @@
 .order-form__input {
+  display: block;
   margin: 0;
   padding: 12px 12px 12px 24px;
   width: 60%;
@@ -42,7 +43,7 @@
 }
 
 input[type="date"] {
-  display: inline-flex;
+  display: block;
   display: -webkit-inline-flex;
   display: -webkit-flex;
   display: -ms-inline-flexbox;
