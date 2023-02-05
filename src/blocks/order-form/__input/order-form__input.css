@@ -1,14 +1,14 @@
 .order-form__input {
   margin: 0;
   padding: 12px 12px 12px 24px;
-  width: 50%;
-  -webkit-input-width: 50%;
-  -moz-width: 50%;
-  -webkit-width: 50%;
-  -khtml-width: 50%;
-  -o-width: 50%;
-  -icab-width: 50%;
-  -ms-width: 50%;
+  width: 60%;
+  -webkit-input-width: 60%;
+  -moz-width: 60%;
+  -webkit-width: 60%;
+  -khtml-width: 60%;
+  -o-width: 60%;
+  -icab-width: 60%;
+  -ms-width: 60%;
   content: attr(placeholder);
   height: 46px;
   border: 1.5px solid #ffffff;
@@ -43,14 +43,14 @@
 
 input[type="date"] {
   /* display: inline-flex; */
-  -webkit-input-width: 50%;
-  -moz-width: 50%;
-  -webkit-width: 50%;
-  -khtml-width: 50%;
-  -o-width: 50%;
-  -icab-width: 50%;
-  -ms-width: 50%;
-  width: 50%;
+  -webkit-input-width: 60%;
+  -moz-width: 60%;
+  -webkit-width: 60%;
+  -khtml-width: 60%;
+  -o-width: 60%;
+  -icab-width: 60%;
+  -ms-width: 60%;
+  width: 60%;
   content: attr(placeholder);
 }
 
