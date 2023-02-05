@@ -9,6 +9,7 @@
   -o-width: 50%;
   -icab-width: 50%;
   -ms-width: 50%;
+  content: attr(placeholder);
   height: 46px;
   border: 1.5px solid #ffffff;
   border-radius: 10px;
@@ -40,10 +41,30 @@
   color: #ffe700;
 }
 
+input[type="date"] {
+  -webkit-input-width: 50%;
+  -moz-width: 50%;
+  -webkit-width: 50%;
+  -khtml-width: 50%;
+  -o-width: 50%;
+  -icab-width: 50%;
+  -ms-width: 50%;
+  width: 50%;
+  content: attr(placeholder);
+}
+
 @media screen and (max-width: 600px) {
   .order-form__input {
     height: 38px;
     font-size: 12px;
     line-height: 14px;
+    content: attr(placeholder);
+    -webkit-input-width: 50%;
+    -moz-width: 50%;
+    -webkit-width: 50%;
+    -khtml-width: 50%;
+    -o-width: 50%;
+    -icab-width: 50%;
+    -ms-width: 50%;
   }
 }
