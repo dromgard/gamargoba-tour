@@ -42,6 +42,7 @@
 }
 
 input[type="date"] {
+  display: inline-flex;
   -webkit-input-width: 50%;
   -moz-width: 50%;
   -webkit-width: 50%;
@@ -53,7 +54,7 @@ input[type="date"] {
   content: attr(placeholder);
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .order-form__input {
     height: 38px;
     font-size: 12px;
@@ -67,4 +68,4 @@ input[type="date"] {
     -icab-width: 50%;
     -ms-width: 50%;
   }
-}
+} */
