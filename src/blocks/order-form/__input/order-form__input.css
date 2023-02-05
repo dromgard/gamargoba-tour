@@ -42,7 +42,12 @@
 }
 
 input[type="date"] {
-  /* display: inline-flex; */
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  display: -webkit-flex;
+  display: -ms-inline-flexbox;
+  display: -ms-flexbox;
+  display: -moz-inline-box;
   -webkit-input-width: 60%;
   -moz-width: 60%;
   -webkit-width: 60%;
