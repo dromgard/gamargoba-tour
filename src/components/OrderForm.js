@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import DatePicker from 'react-date-picker';
 
 function OrderForm({ onSubmit }) {
   // States.
@@ -13,6 +14,7 @@ function OrderForm({ onSubmit }) {
   const [isFormValid, setIsFormValid] = useState(false);
   const [inputNameError, setInputNameError] = useState("*Обязательное поле");
   const [inputPhoneError, setInputPhoneError] = useState("*Обязательное поле");
+  const [startDate, setStartDate] = useState("");
 
   const phoneRegex = /[^0-9'".]/;
 
@@ -147,7 +149,7 @@ function OrderForm({ onSubmit }) {
           <span className="order-form__input-error">{inputPhoneError}</span>
         </div>
         <div className="order-form__input-area">
-          <input
+          {/* <input
             id="date"
             type="date"
             placeholder="Выбрать дату"
@@ -155,7 +157,8 @@ function OrderForm({ onSubmit }) {
             className="order-form__input"
             value={inputValues.date}
             onChange={handleChangeDate}
-          />
+          /> */}
+          <DatePicker className="order-form__input" onChange={setStartDate} value={startDate} />
           <span className="order-form__input-error"></span>
         </div>
         <button

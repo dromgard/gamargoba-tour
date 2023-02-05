@@ -1,16 +1,47 @@
 .order-form__input {
-  display: block;
   margin: 0;
   padding: 12px 12px 12px 24px;
-  width: 60%;
-  -webkit-input-width: 60%;
-  -moz-width: 60%;
-  -webkit-width: 60%;
-  -khtml-width: 60%;
-  -o-width: 60%;
-  -icab-width: 60%;
-  -ms-width: 60%;
-  content: attr(placeholder);
+  width: 100%;
+  height: 46px;
+  border: 1.5px solid #ffffff;
+  border-radius: 10px;
+  background-color: #4a5d67;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.react-date-picker__wrapper {
+  border: 0 !important;
+  align-items: center;
+}
+
+.react-date-picker__inputGroup__input {
+  color: #ffffff !important;
+  font-family: "Montserrat" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+}
+
+.react-date-picker__button:enabled:hover .react-date-picker__button__icon,
+.react-date-picker__button:enabled:focus .react-date-picker__button__icon {
+  stroke: #ffffff !important;
+}
+
+.react-date-picker__inputGroup__input:invalid {
+  background: #4a5d67 !important;
+}
+
+.order-form__input-date {
+  width: 100%;
+  margin: 0;
+  padding: 12px 12px 12px 24px;
   height: 46px;
   border: 1.5px solid #ffffff;
   border-radius: 10px;
@@ -42,36 +73,10 @@
   color: #ffe700;
 }
 
-input[type="date"] {
-  display: block;
-  display: -webkit-inline-flex;
-  display: -webkit-flex;
-  display: -ms-inline-flexbox;
-  display: -ms-flexbox;
-  display: -moz-inline-box;
-  -webkit-input-width: 60%;
-  -moz-width: 60%;
-  -webkit-width: 60%;
-  -khtml-width: 60%;
-  -o-width: 60%;
-  -icab-width: 60%;
-  -ms-width: 60%;
-  width: 60%;
-  content: attr(placeholder);
-}
-
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .order-form__input {
     height: 38px;
     font-size: 12px;
     line-height: 14px;
-    content: attr(placeholder);
-    -webkit-input-width: 50%;
-    -moz-width: 50%;
-    -webkit-width: 50%;
-    -khtml-width: 50%;
-    -o-width: 50%;
-    -icab-width: 50%;
-    -ms-width: 50%;
   }
-} */
+}
