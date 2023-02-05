@@ -2,6 +2,13 @@
   margin: 0;
   padding: 12px 12px 12px 24px;
   width: 50%;
+  -webkit-input-width: 50%;
+  -moz-width: 50%;
+  -webkit-width: 50%;
+  -khtml-width: 50%;
+  -o-width: 50%;
+  -icab-width: 50%;
+  -ms-width: 50%;
   height: 46px;
   border: 1.5px solid #ffffff;
   border-radius: 10px;
