@@ -79,4 +79,9 @@
     font-size: 12px;
     line-height: 14px;
   }
+
+  .react-date-picker__inputGroup__input {
+    font-size: 12px !important;
+    line-height: 14px !important;
+  }
 }
